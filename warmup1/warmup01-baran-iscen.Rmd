@@ -1,0 +1,90 @@
+---
+title: "Warm-up 01"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Game of Thrones
+
+
+*This section will be dedicated to Myrcella Baratheon.*
+
+She said once:
+
+> Is Bran going to die ?
+
+Here is an image illustrating what Myrcella looks like:
+
+
+![](https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/e/e5/Myrcella_Baratheon.jpg/revision/latest?cb=20150820170028&path-prefix=fr)
+
+
+**Let's look now at some informations related to Myrcella**
+
+| Questions   |      Answers      |
+|----------|:------------- |
+| Status |  Deceased |
+| Age |    19   |
+| Date of birth | 283 AC |   
+| Origin | King's Landing |
+| Allegiance |    House Baratheon of King's Landing   |
+| Religion | Faith of the Seven | 
+
+
+
+#Cooking Recipe
+**We will dedicate this section to the Matzo Ball soup. One must get the following ingredients**:
+
+* 2 parsnips, scrubbed and cut into big chunks
+- 3 1/2 to 4 1/2 pounds chicken necks, backs and wings
++ 3 celery ribs, cut into big chunks
+* 3 carrots, scrubbed and cut into big chunkss
+- 2 onions, unpeeled and quartered
++ 1 head garlic, cut horizontally in half
+
+We will need *"special"* kitchen tools for this:
+
+* Food Hugger Set
+- Serving Spoon
++ Himalayan Salt Plank Scrubber Brush
+* Kale & Herb Razor
+- Spongester 
++ Easy Egg Peeler
+
+**To realize this meal, we will have to follow five steps:**
+
+1. Mix all matzo ball ingredients in a bowl. Cover and place in the refrigerator for 30 minutes.
+
+2. Bring 1 1/2 quarts of well-salted water to a brisk boil in a medium sized pot.
+
+3. Reduce the flame. Run your hands under water so they are thoroughly wet. Form matzo balls by dropping spoonfuls of matzo ball batter approximately 1-inch in diameter into the palm of your wet hands and rolling them loosely into balls. Drop them into the simmering salt water one at a time. Cover the pot and cook them for 30 to 40 minutes.
+
+4. About ten minutes before the matzo balls are ready, bring prepared chicken stock to a simmer with the sliced carrot in it. Ladle some soup and a couple matzo balls into each bowl and top with a couple snips of dill. 
+
+5. Eat immediately.
+
+![](https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/3/7/1/FNM_040116-Matzo-Ball-Soup-Recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1457565482010.jpeg)
+
+**There is no special season to eat this meal, although it has a particular flavour thorugh winter. This having been said, considering the fact that there is no real 'winter' in California, one can try the experience whenever he likes!**
+
+#Quadratic Equation
+
+$$ax^2 + bx+c=0$$
+$$x = \frac{{ - b \pm \sqrt {b^2 - 4ac} }}{{2a}}$$
+$$ax^2 + bx + c=0$$
+$$4x^2a^2 + 4abx + 4ac = 0$$
+$$4x^2a^2 + 4abx = -4ac$$
+$$ 4x^2a^2 + 4abx + b^2 = b^2 - 4ac$$
+$$(2ax+b)^2 = b^2 - 4ac $$
+$$ 2 ax + b = \pm \sqrt {b^2 - 4ac}$$
+$$2ax = - b \pm \sqrt {b^2 - 4ac}$$
+$$ x = \frac{{ - b \pm \sqrt {b^2 - 4ac} }}{{2a}} $$
+
+#Comments and Reflections
+
+As explained by the Professor in lecture, the reporting is a decise part of the researcher work. Writing an article is a step, running an experience is something, being able to explain it clearly and in a transparent way is something else. Thus, I appreciate to get to use the different tools available with R and see for example that I can use my LaTeX code.
+
+
