@@ -1,0 +1,54 @@
+---
+title: "Project1_Stat133"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+```
+
+#Workout 1 - Data Wrangling and Visualization
+
+#Ranking part
+
+```{r}
+
+
+
+dataset_ranking <- read.csv("../data/nba2018-teams.csv", header=TRUE)
+dataset_ranking
+
+
+# Bar chart of the Total salary
+ggplot(dataset_ranking, aes(x=reorder(dataset_ranking$team, dataset_ranking$total_salary), y=dataset_ranking$total_salary)) + #
+  geom_bar(stat='identity') +
+  coord_flip() + ggtitle("NBA Teams Ranked by Total Salary") + labs(x = "Team") + labs(y = "Salary (in millions)") + geom_hline(yintercept=mean(dataset_ranking$total_salary), color= 'orange', size=2)
+
+# Bar chart of the Total points
+ggplot(dataset_ranking, aes(x=reorder(dataset_ranking$team, dataset_ranking$total_points), y=dataset_ranking$total_points)) + 
+  geom_bar(stat='identity') +
+  coord_flip() + ggtitle("NBA Teams Ranked by Total Points") + labs(x = "Team") + labs(y = "Total points") + geom_hline(yintercept=mean(dataset_ranking$total_points), color= 'orange', size=2)
+
+#Bar chart of the total efficiency
+ggplot(dataset_ranking, aes(x=reorder(dataset_ranking$team, dataset_ranking$total_efficiency), y=dataset_ranking$total_efficiency)) + 
+  geom_bar(stat='identity') +
+  coord_flip() + ggtitle("NBA Teams Ranked by Efficiency") + labs(x = "Team") + labs(y = "Efficiency") + geom_hline(yintercept=mean(dataset_ranking$total_efficiency), color= 'orange', size=2)
+
+
+#We create our own index of performance of team.
+
+#We will now create another index for teams. The purpose of this index will be to approach the future potential of a given team in the NBA competition. One may indeed think that a team with a potential is a team with a strong team spirit and advantages based on the collective rather than on individualities that may have to leave in another teams if important transfer offers are made or may be suddenly injured. Hence, in this index we will emphasize the collective statistics such as the points that result from collective actions, points1 and points2, the rebounds, the turnovers also and we will remove the fouls and normalize by the salaries.
+
+
+dataset_index <- mutate(dataset_ranking, degrees_colec = (total_points - points_3 + total_off_rebounds + total_def_rebounds + total_turnovers - total_fouls)/ (total_salary))
+dataset_index 
+
+ggplot(dataset_index, aes(x=reorder(dataset_index$team, dataset_index$degrees_colec), y=dataset_index$degrees_colec)) + 
+  geom_bar(stat='identity') +
+  coord_flip() + ggtitle("NBA Teams Ranked by degree of 'team spirit'") + labs(x = "Team") + labs(y = "Measure of team spirit") + geom_hline(yintercept=mean(dataset_index$degrees_colec), color= 'red', size=2)
+
+
+```
+

@@ -1,0 +1,14 @@
+# A tibble: 30 x 15
+   team  experience_total total_salary points_3 points_2 points_1 total_points total_off_rebounds total_def_rebounds total_assists total_steals total_blocks total_turnovers
+   <fct>            <int>        <dbl>    <int>    <int>    <int>        <int>              <int>              <int>         <int>        <int>        <int>           <int>
+ 1 ATL                172         93.4      660     2337     1453         4450                832               2676          1846          645          381            1201
+ 2 BOS                183         91.9      985     2183     1536         4704                744               2698          2069          617          340            1037
+ 3 BRK                245         76.2      777     2040     1444         4261                689               2697          1664          568          382            1212
+ 4 CHI                144         92.5      565     2162     1330         4057                865               2419          1746          605          339             956
+ 5 CHO                174         88.5      808     2089     1497         4394                621               2615          1806          543          316             820
+ 6 CLE                146        127.      1030     2148     1384         4562                735               2673          1779          483          304            1020
+ 7 DAL                237         92.8      712     1754     1007         3473                521               2063          1183          507          257             674
+ 8 DEN                214         79.0      868     2351     1477         4696                872               2660          2015          543          286            1102
+ 9 DET                166        103.       631     2638     1140         4409                908               2838          1732          574          310             932
+10 GSW                166        100.       982     2545     1455         4982                770               2869          2486          782          554            1179
+# ... with 20 more rows, and 2 more variables: total_fouls <int>, total_efficiency <dbl>
