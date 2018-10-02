@@ -24,17 +24,18 @@ dataset_ranking
 # Bar chart of the Total salary
 ggplot(dataset_ranking, aes(x=reorder(dataset_ranking$team, dataset_ranking$total_salary), y=dataset_ranking$total_salary)) + #
   geom_bar(stat='identity') +
-  coord_flip() + ggtitle("NBA Teams Ranked by Total Salary") + labs(x = "Team") + labs(y = "Salary (in millions)") + geom_hline(yintercept=mean(dataset_ranking$total_salary), color= 'orange', size=2)
+  coord_flip() + ggtitle("NBA Teams Ranked by Total Salary") + labs(x = "Team") + labs(y = "Salary (in millions)") + geom_hline(yintercept=mean(dataset_ranking$total_salary), color= 'orange', size=2) + scale_y_continuous(name = 'Salary (in millions)', breaks = c(0,40,80,120,160))
+
 
 # Bar chart of the Total points
 ggplot(dataset_ranking, aes(x=reorder(dataset_ranking$team, dataset_ranking$total_points), y=dataset_ranking$total_points)) + 
   geom_bar(stat='identity') +
-  coord_flip() + ggtitle("NBA Teams Ranked by Total Points") + labs(x = "Team") + labs(y = "Total points") + geom_hline(yintercept=mean(dataset_ranking$total_points), color= 'orange', size=2)
+  coord_flip() + ggtitle("NBA Teams Ranked by Total Points") + labs(x = "Team") + labs(y = "Total points") + geom_hline(yintercept=mean(dataset_ranking$total_points), color= 'orange', size=2) 
 
 #Bar chart of the total efficiency
 ggplot(dataset_ranking, aes(x=reorder(dataset_ranking$team, dataset_ranking$total_efficiency), y=dataset_ranking$total_efficiency)) + 
   geom_bar(stat='identity') +
-  coord_flip() + ggtitle("NBA Teams Ranked by Efficiency") + labs(x = "Team") + labs(y = "Efficiency") + geom_hline(yintercept=mean(dataset_ranking$total_efficiency), color= 'orange', size=2)
+  coord_flip() + ggtitle("NBA Teams Ranked by Efficiency") + labs(x = "Team") + labs(y = "Efficiency") + geom_hline(yintercept=mean(dataset_ranking$total_efficiency), color= 'orange', size=2)  +  scale_y_continuous(name = 'Efficiency', breaks = c(0,40,80,120,160))
 
 
 #We create our own index of performance of team.
@@ -47,8 +48,14 @@ dataset_index
 
 ggplot(dataset_index, aes(x=reorder(dataset_index$team, dataset_index$degrees_colec), y=dataset_index$degrees_colec)) + 
   geom_bar(stat='identity') +
-  coord_flip() + ggtitle("NBA Teams Ranked by degree of 'team spirit'") + labs(x = "Team") + labs(y = "Measure of team spirit") + geom_hline(yintercept=mean(dataset_index$degrees_colec), color= 'red', size=2)
+  coord_flip() + ggtitle("NBA Teams Ranked by degree of 'team spirit'") + labs(x = "Team") + labs(y = "Measure of team spirit") + geom_hline(yintercept=mean(dataset_index$degrees_colec), color= 'red', size=2)  + scale_y_continuous(name = 'Measure of team spirit', breaks = c(0,40,80,120,160))
 
 
+```
+
+#Comments and Reflections
+
+```{r}
+#This project was very interesting, since it helped us summarising sort ouf the tools that we have gained until now. I also liked paying to some details on the graphs.
 ```
 
